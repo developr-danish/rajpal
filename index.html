@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Precision Engineering &amp; Manufacturing Company in India | Rajpall Manufacturers</title>
+<meta name="description" content="Rajpall Manufacturers LLP is a manufacturing and trading company serving Automotive, Defence, Mining and Construction industries with precision components and engineered products.">
+
+<!-- Tailwind (play CDN) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          heading: ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif']
+        },
+        colors: {
+          bg: 'var(--bg)',
+          surface: 'var(--surface)',
+          ink: 'var(--ink)',
+          muted: 'var(--muted)',
+          line: 'var(--line)',
+          brand: 'var(--brand)',
+          'brand-deep': 'var(--brand-deep)',
+          'brand-soft': 'var(--brand-soft)',
+          link: 'var(--link)',
+          accent: 'var(--accent)',
+          'accent-ink': 'var(--accent-ink)',
+          footer: 'var(--footer)'
+        },
+        borderColor: { DEFAULT: 'var(--line)' }
+      }
+    }
+  };
+</script>
+
+<!-- Fonts: Montserrat (headings) + Inter (body) -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #F8FAFC;
+    --surface: #FFFFFF;
+    --ink: #1E293B;
+    --muted: #546274;
+    --line: #E2E8F0;
+    --brand: #1F5FA8;
+    --brand-deep: #EAF2FB;
+    --brand-soft: #EAF2FB;
+    --link: #1F5FA8;
+    --accent: #F5A524;
+    --accent-ink: #1B1300;
+    --footer: #EEF3F9;
+    color-scheme: light;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  html { scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 84px); -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+  body { background: var(--bg); color: var(--ink); font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3, h4 { font-family: 'Montserrat', ui-sans-serif, system-ui, sans-serif; }
+
+  .h2 { font-family: 'Montserrat', ui-sans-serif, system-ui, sans-serif; font-weight: 700; letter-spacing: -0.015em; line-height: 1.15; font-size: clamp(1.75rem, 1.2rem + 2vw, 2.5rem); }
+
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  /* Buttons */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; padding: .85rem 1.35rem; font-weight: 600; font-size: .95rem; line-height: 1.2; border-radius: .375rem; transition: background-color .15s, border-color .15s, color .15s; text-align: center; }
+  .btn-primary { background: var(--accent); color: var(--accent-ink); }
+  .btn-primary:hover { background: #FFB93D; }
+  .btn-ghost { border: 1px solid #9DB8DC; color: var(--brand); background: #fff; }
+  .btn-ghost:hover { background: var(--brand-soft); border-color: var(--brand); }
+
+  /* Icons (from the sprite) */
+  .ico { fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+
+  /* Blueprint grid used for hero + closing CTA */
+
+  /* Dimension line (Commitment heading) */
+  .dim-line { height: 1px; background: var(--line); position: relative; }
+  .dim-line::before, .dim-line::after { content: ""; position: absolute; top: -6px; width: 1px; height: 13px; background: var(--muted); }
+  .dim-line::before { left: 0; }
+  .dim-line::after { right: 0; }
+
+
+  /* Hero: a single background image, softened on the left so the text stays readable.
+     Replace the value of --hero-image with your photo, e.g. url("data:image/jpeg;base64,...") */
+  :root { --hero-image: none; }
+  .hero-bg {
+    background-image: url(assets/hero-banner.png);
+  }
+
+  /* Mega menu */
+  .mega-in { animation: megain .16s ease-out; }
+  @keyframes megain { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .mega-in { animation: none; } }
+  .mega-link { display: block; margin: 0 -.5rem; padding: .4rem .5rem; border-radius: .25rem; font-size: .875rem; color: var(--muted); transition: background-color .12s, color .12s; }
+  .mega-link:hover { background: var(--brand-soft); color: var(--ink); }
+
+  /* FAQ */
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] .chev { transform: rotate(180deg); }
+  .chev { transition: transform .2s ease; }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Rajpall Manufacturers LLP",
+      "description": "Precision manufacturing and engineered products for Automotive, Defence, Mining and Construction industries."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does Rajpall Manufacturers manufacture?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Rajpall Manufacturers LLP manufactures and trades precision components and engineered products serving the automotive, defence, mining and construction industries. Its portfolio includes springs, rubber products, bolts and machine components, marine products, welding wire, casting and forging products, drill bits, drill spares and drilling tools and consumables." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which industries does Rajpall Manufacturers serve?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Rajpall Manufacturers serves the automotive, defence, mining and construction industries. Its products are intended for applications where reliability, precision, durability and consistent performance are important." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Rajpall Manufacturers a manufacturer or supplier?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Rajpall Manufacturers LLP operates as a manufacturing and trading company. Depending on the product and customer requirement, the company can manufacture products or support procurement through its trading and supply capabilities." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Rajpall manufacture products according to customer specifications?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Where manufacturing capability permits, Rajpall can work around customer requirements such as drawings, dimensions, materials and application specifications. Specific custom-manufacturing capabilities should be confirmed with the Rajpall engineering team." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which products does Rajpall offer for defence applications?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The defence portfolio includes inflatable boats, fibre glass boats, bolts and machine components, bogie bolts, ER70S-7 MIG welding wire, and casting and forging products." }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I request a quote?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Share your requirement through the Request a Quote form, including the product, quantity and application details. You can also upload a drawing or specification so the Rajpall team can review it." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="bg-bg text-ink font-sans">
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3"/><path d="M12 1.5v4M12 18.5v4M1.5 12h4M18.5 12h4"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M7.8 12.4l3 3 5.4-6"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H10l-5 4v-4H4z"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="2.2"/><path d="M17.5 12h4M6.5 12h-4M12 6.5v-4M12 17.5v4M15.9 8.1l2.8-2.8M8.1 15.9l-2.8 2.8M8.1 8.1L5.3 5.3M15.9 15.9l2.8 2.8"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2.5l8 3v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10v-6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+    <symbol id="i-drill" viewBox="0 0 24 24"><path d="M8.5 2.5h7v9L12 21.5l-3.5-10z"/><path d="M8.5 6.5l7 3M9 10.5l6.5 3"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+  </defs>
+</svg>
+
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded focus:bg-accent focus:px-4 focus:py-2 focus:text-accent-ink">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="sticky z-50 border-b bg-surface" style="top: env(safe-area-inset-top, 0px);">
+  <div class="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-5 sm:px-8">
+
+    <a href="/" class="flex shrink-0 items-center gap-3" aria-label="Rajpall Manufacturers LLP, home">
+      <img class="w-40" src="assets/rajpal-logo.png" alt="Rajpall Manufacturers LLP">
+    </a>
+
+    <!-- Desktop: full menu -->
+    <nav class="hidden items-center gap-5 lg:flex xl:gap-7" aria-label="Primary">
+      <a href="/" class="text-[13px] font-medium text-ink transition-colors hover:text-link xl:text-sm">Home</a>
+      <a href="about-us.html" class="text-[13px] font-medium text-ink transition-colors hover:text-link xl:text-sm">About Us</a>
+
+      <!-- Products + mega menu -->
+      <div id="mega-wrap" class="flex h-[72px] items-center">
+        <button id="mega-btn" type="button" class="inline-flex items-center gap-1 text-[13px] font-medium text-ink transition-colors hover:text-link xl:text-sm" aria-expanded="false" aria-controls="mega-panel" aria-haspopup="true">
+          Products
+          <svg id="mega-chev" class="ico h-4 w-4 transition-transform" style="stroke-width:2" aria-hidden="true"><use href="#i-chevron"/></svg>
+        </button>
+
+        <div id="mega-panel" class="absolute left-0 right-0 top-full hidden border-b bg-surface shadow-[0_20px_32px_-16px_rgba(15,23,42,.22)]">
+          <div class="mx-auto grid max-w-7xl gap-8 px-8 py-8 lg:grid-cols-[repeat(3,minmax(0,1fr))_minmax(0,1.05fr)]">
+
+        <div>
+          <div class="flex items-center gap-3 border-b pb-3">
+            <span class="flex h-9 w-9 items-center justify-center bg-brand text-white"><svg class="ico h-5 w-5" aria-hidden="true"><use href="#i-gear"/></svg></span>
+            <div>
+              <a href="/products/automotive.html" class="font-heading text-base font-bold text-ink">Automotive</a>
+              <p class="text-xs text-muted">4 product lines</p>
+            </div>
+          </div>
+          <ul class="mt-3"><li><a href="/products/automotive/springs.html" class="mega-link">Springs</a></li><li><a href="/products/automotive/rubber-products.html" class="mega-link">Rubber Products</a></li><li><a href="/products/automotive/bolts-machine-components.html" class="mega-link">Bolts &amp; Machine Components</a></li><li><a href="/products/automotive/specialised-bolts.html" class="mega-link">Specialised Bolts</a></li></ul>
+        </div>
+
+        <div>
+          <div class="flex items-center gap-3 border-b pb-3">
+            <span class="flex h-9 w-9 items-center justify-center bg-brand text-white"><svg class="ico h-5 w-5" aria-hidden="true"><use href="#i-shield"/></svg></span>
+            <div>
+              <a href="/products/defence.html" class="font-heading text-base font-bold text-ink">Defence</a>
+              <p class="text-xs text-muted">6 product lines</p>
+            </div>
+          </div>
+          <ul class="mt-3"><li><a href="/products/defence/inflatable-boats.html" class="mega-link">Inflatable Boats</a></li><li><a href="/products/defence/fibre-glass-boats.html" class="mega-link">Fibre Glass Boats</a></li><li><a href="/products/defence/defence-bolts-machine-components.html" class="mega-link">Bolts &amp; Machine Components</a></li><li><a href="/products/defence/bogie-bolts.html" class="mega-link">Bogie Bolts</a></li><li><a href="/products/defence/er70s-7-mig-welding-wire.html" class="mega-link">ER70S-7 MIG Welding Wire</a></li><li><a href="/products/defence/casting-forging-products.html" class="mega-link">Casting &amp; Forging Products</a></li></ul>
+        </div>
+
+        <div>
+          <div class="flex items-center gap-3 border-b pb-3">
+            <span class="flex h-9 w-9 items-center justify-center bg-brand text-white"><svg class="ico h-5 w-5" aria-hidden="true"><use href="#i-drill"/></svg></span>
+            <div>
+              <a href="/products/mining-construction.html" class="font-heading text-base font-bold text-ink">Mining &amp; Construction</a>
+              <p class="text-xs text-muted">3 product lines</p>
+            </div>
+          </div>
+          <ul class="mt-3"><li><a href="/products/mining-construction/drill-bits.html" class="mega-link">Drill Bits</a></li><li><a href="/products/mining-construction/drill-spares.html" class="mega-link">Drill Spares</a></li><li><a href="/products/mining-construction/drilling-consumables-tools.html" class="mega-link">Drilling Consumables &amp; Tools</a></li></ul>
+        </div>
+            <div class="flex flex-col justify-between bg-brand-soft p-6">
+              <div>
+                <p class="font-heading text-base font-bold text-ink">Send us your requirement</p>
+                <p class="mt-2 text-sm leading-relaxed text-muted">Share a drawing or specification and the Rajpall team will review it with you.</p>
+              </div>
+              <div class="mt-5 flex flex-col gap-3">
+                <a href="contact-us.html" class="btn btn-primary !py-2.5 !text-sm">Request a Quote</a>
+                <a href="products.html" class="inline-flex items-center justify-center gap-2 text-sm font-semibold text-link">
+                  View all products
+                  <svg class="ico h-4 w-4" style="stroke-width:2" aria-hidden="true"><use href="#i-arrow"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="industries.html" class="text-[13px] font-medium text-ink transition-colors hover:text-link xl:text-sm">Industries</a>
+      <a href="manufacturing-capabilities.html" class="text-[13px] font-medium text-ink transition-colors hover:text-link xl:text-sm">Manufacturing Capabilities</a>
+      <a href="contact-us.html" class="text-[13px] font-medium text-ink transition-colors hover:text-link xl:text-sm">Contact Us</a>
+      <a href="contact-us.html" class="btn btn-primary !px-4 !py-2.5 !text-[13px] xl:!px-5 xl:!text-sm">Request a Quote</a>
+    </nav>
+
+    <!-- Mobile / tablet: hamburger -->
+    <button id="menu-btn" type="button" class="-mr-2 inline-flex h-11 w-11 items-center justify-center rounded-md text-ink hover:bg-brand-soft lg:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+      <svg id="icon-open" class="ico h-6 w-6" style="stroke-width:2" aria-hidden="true"><use href="#i-menu"/></svg>
+      <svg id="icon-close" class="ico hidden h-6 w-6" style="stroke-width:2" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu panel -->
+  <div id="mobile-menu" class="hidden max-h-[calc(100dvh-4.5rem)] overflow-y-auto border-t bg-surface lg:hidden">
+    <nav class="mx-auto max-w-7xl px-5 pb-6 pt-2 sm:px-8" aria-label="Mobile">
+      <ul class="divide-y">
+        <li><a href="/" class="block py-3.5 text-base font-medium text-ink">Home</a></li>
+        <li><a href="about-us.html" class="block py-3.5 text-base font-medium text-ink">About Us</a></li>
+        <li>
+          <button id="m-products-btn" type="button" class="flex w-full items-center justify-between py-3.5 text-left text-base font-medium text-ink" aria-expanded="false" aria-controls="m-products">
+            Products
+            <svg id="m-products-chev" class="ico h-5 w-5 text-muted transition-transform" style="stroke-width:2" aria-hidden="true"><use href="#i-chevron"/></svg>
+          </button>
+          <div id="m-products" class="hidden pb-5">
+            <div class="space-y-5 border-l-2 border-brand pl-4">
+              <div><p class="text-sm font-bold text-ink">Automotive</p><ul class="mt-1"><li><a href="springs.html" class="block py-1.5 text-sm text-muted">Springs</a></li><li><a href="rubber-products.html" class="block py-1.5 text-sm text-muted">Rubber Products</a></li><li><a href="bolts-machine-components.html" class="block py-1.5 text-sm text-muted">Bolts &amp; Machine Components</a></li><li><a href="specialised-bolts.html" class="block py-1.5 text-sm text-muted">Specialised Bolts</a></li></ul></div>
+              <div><p class="text-sm font-bold text-ink">Defence</p><ul class="mt-1"><li><a href="inflatable-boats.html" class="block py-1.5 text-sm text-muted">Inflatable Boats</a></li><li><a href="fibre-glass-boats.html" class="block py-1.5 text-sm text-muted">Fibre Glass Boats</a></li><li><a href="bolts-machine-components.html" class="block py-1.5 text-sm text-muted">Bolts &amp; Machine Components</a></li><li><a href="bogie-bolts.html" class="block py-1.5 text-sm text-muted">Bogie Bolts</a></li><li><a href="er70s-7-mig-welding-wire.html" class="block py-1.5 text-sm text-muted">ER70S-7 MIG Welding Wire</a></li><li><a href="casting-forging-products.html" class="block py-1.5 text-sm text-muted">Casting &amp; Forging Products</a></li></ul></div>
+              <div><p class="text-sm font-bold text-ink">Mining &amp; Construction</p><ul class="mt-1"><li><a href="drill-bits.html" class="block py-1.5 text-sm text-muted">Drill Bits</a></li><li><a href="drill-spares.html" class="block py-1.5 text-sm text-muted">Drill Spares</a></li><li><a href="drilling-consumables-tools.html" class="block py-1.5 text-sm text-muted">Drilling Consumables &amp; Tools</a></li></ul></div>
+              <a href="products.html" class="inline-flex items-center gap-2 text-sm font-semibold text-link">
+                View all products
+                <svg class="ico h-4 w-4" style="stroke-width:2" aria-hidden="true"><use href="#i-arrow"/></svg>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li><a href="industries.html" class="block py-3.5 text-base font-medium text-ink">Industries</a></li>
+        <li><a href="manufacturing-capabilities.html" class="block py-3.5 text-base font-medium text-ink">Manufacturing Capabilities</a></li>
+        <li><a href="contact-us.html" class="block py-3.5 text-base font-medium text-ink">Contact Us</a></li>
+      </ul>
+      <a href="#quote" class="btn btn-primary mt-4 w-full">Request a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<!-- Hero: one background image. Set the photo in :root --hero-image (see CSS) -->
+<section id="top" class="hero-bg relative overflow-hidden border-b text-ink">
+
+  <div class="mx-auto max-w-7xl px-5 py-16 sm:px-8 md:py-24 lg:py-20">
+    <div class="max-w-xl lg:max-w-[34rem] xl:max-w-2xl">
+      <h1 class="text-[2.35rem] font-bold leading-[1.08] text-white tracking-tight sm:text-5xl xl:text-5xl">
+        <span class="block">Precision Manufacturing.</span>
+        <span class="block text-link">Engineered for Excellence.</span>
+      </h1>
+
+      <p class="mt-6 max-w-xl text-base leading-relaxed text-white">
+        <strong class="font-semibold">Rajpall Manufacturers LLP</strong> is a precision engineering and manufacturing company delivering high-quality components and engineered products for the Automotive, Defence, Mining and Construction industries.
+      </p>
+      <p class="mt-4 max-w-xl text-base leading-relaxed text-white">
+        With a commitment to precision, reliability and customer satisfaction, we work to deliver manufacturing solutions designed around demanding industrial requirements.
+      </p>
+
+      <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+        <a href="products.html" class="btn btn-primary">
+          Explore Our Products
+          <svg class="ico h-4 w-4" style="stroke-width:2.2" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+        <a href="contact-us.html" class="btn btn-ghost">Request a Quote</a>
+      </div>
+
+      <ul class="mt-12 grid max-w-xl grid-cols-1 border-t text-sm font-medium text-white sm:grid-cols-3">
+        <li class="border-b py-4 pr-4 sm:border-b-0">Automotive</li>
+        <li class="border-b py-4 pr-4 sm:border-b-0 sm:border-l sm:pl-4">Defence</li>
+        <li class="py-4 pr-4 sm:border-l sm:pl-4">Mining & Construction</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENGINEERING EXCELLENCE ============ -->
+<section id="about" class="bg-bg">
+  <div class="mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-8 md:py-24 lg:grid-cols-12 lg:gap-16">
+    <div class="lg:col-span-5">
+      <h2 class="h2 text-ink">Engineering Excellence Built Around Your Requirements</h2>
+      <p class="mt-6 max-w-prose text-base leading-relaxed text-muted sm:text-lg">
+        At Rajpall Manufacturers, we understand that industrial components must perform consistently under demanding conditions. Our approach combines manufacturing expertise, quality-focused processes and customer collaboration to deliver products aligned with specific application requirements.
+      </p>
+    </div>
+
+    <dl class="divide-y border-y lg:col-span-7">
+      <div class="flex gap-5 py-7">
+        <span class="flex h-12 w-12 shrink-0 items-center justify-center bg-brand-soft text-link"><svg class="ico h-6 w-6" aria-hidden="true"><use href="#i-target"/></svg></span>
+        <div>
+          <dt class="font-heading text-xl font-semibold text-ink">Precision</dt>
+          <dd class="mt-1.5 max-w-prose text-muted">Focused on dimensional accuracy, consistency and application requirements.</dd>
+        </div>
+      </div>
+      <div class="flex gap-5 py-7">
+        <span class="flex h-12 w-12 shrink-0 items-center justify-center bg-brand-soft text-link"><svg class="ico h-6 w-6" aria-hidden="true"><use href="#i-check"/></svg></span>
+        <div>
+          <dt class="font-heading text-xl font-semibold text-ink">Reliability</dt>
+          <dd class="mt-1.5 max-w-prose text-muted">Products designed and supplied with attention to dependable industrial performance.</dd>
+        </div>
+      </div>
+      <div class="flex gap-5 py-7">
+        <span class="flex h-12 w-12 shrink-0 items-center justify-center bg-brand-soft text-link"><svg class="ico h-6 w-6" aria-hidden="true"><use href="#i-chat"/></svg></span>
+        <div>
+          <dt class="font-heading text-xl font-semibold text-ink">Customer Commitment</dt>
+          <dd class="mt-1.5 max-w-prose text-muted">We work closely with customers to understand specifications, requirements and delivery expectations.</dd>
+        </div>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ INDUSTRIES ============ -->
+<section id="industries" class="bg-surface">
+  <div class="mx-auto max-w-7xl px-5 py-16 sm:px-8 md:py-24">
+    <h2 class="h2 text-ink">Our Industries</h2>
+
+    <div class="mt-10 grid gap-6 md:grid-cols-3">
+      <article class="group flex flex-col border border-t-4 border-t-brand bg-bg p-7 transition-colors hover:border-brand">
+        <span class="flex h-12 w-12 items-center justify-center bg-brand text-white"><svg class="ico h-6 w-6" aria-hidden="true"><use href="#i-gear"/></svg></span>
+        <h3 class="mt-6 text-xl font-bold text-ink">Automotive</h3>
+        <p class="mt-3 flex-1 text-muted">Precision components and engineered products for automotive applications, including springs, rubber products, bolts and machine components.</p>
+        <a href="./products/automotive.html" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-link">
+          Explore Automotive
+          <svg class="ico h-4 w-4 transition-transform group-hover:translate-x-1" style="stroke-width:2" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </article>
+
+      <article class="group flex flex-col border border-t-4 border-t-brand bg-bg p-7 transition-colors hover:border-brand">
+        <span class="flex h-12 w-12 items-center justify-center bg-brand text-white"><svg class="ico h-6 w-6" aria-hidden="true"><use href="#i-shield"/></svg></span>
+        <h3 class="mt-6 text-xl font-bold text-ink">Defence</h3>
+        <p class="mt-3 flex-1 text-muted">Marine products, fasteners, machine components, welding consumables and casting and forging products for defence-related applications.</p>
+        <a href="./products/defence.html" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-link">
+          Explore Defence
+          <svg class="ico h-4 w-4 transition-transform group-hover:translate-x-1" style="stroke-width:2" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </article>
+
+      <article class="group flex flex-col border border-t-4 border-t-brand bg-bg p-7 transition-colors hover:border-brand">
+        <span class="flex h-12 w-12 items-center justify-center bg-brand text-white"><svg class="ico h-6 w-6" aria-hidden="true"><use href="#i-drill"/></svg></span>
+        <h3 class="mt-6 text-xl font-bold text-ink">Mining &amp; Construction</h3>
+        <p class="mt-3 flex-1 text-muted">Drilling products, drill spares, consumables and tools for demanding mining and construction environments.</p>
+        <a href="./products/mining-construction.html" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-link">
+          Explore Mining &amp; Construction
+          <svg class="ico h-4 w-4 transition-transform group-hover:translate-x-1" style="stroke-width:2" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCT PORTFOLIO ============ -->
+<section id="products" class="bg-bg">
+  <div class="mx-auto max-w-7xl px-5 py-16 sm:px-8 md:py-24">
+    <div class="max-w-2xl">
+      <h2 class="h2 text-ink">Our Product Portfolio</h2>
+      <p class="mt-4 text-muted sm:text-lg">Engineered products and industrial components, grouped by the industries they serve.</p>
+    </div>
+
+    <div class="mt-10 grid items-start gap-6 lg:grid-cols-3">
+
+      <!-- Automotive -->
+      <div class="border bg-surface">
+        <div class="flex items-center justify-between gap-4 border-t-4 border-t-brand bg-brand-soft px-6 py-5 text-ink">
+          <h3 class="text-lg font-bold">Automotive Products</h3>
+          <span class="text-sm text-muted">4 product lines</span>
+        </div>
+        <ul class="divide-y px-6">
+          <li class="flex items-center gap-3 py-4 text-ink"><span class="h-1.5 w-1.5 shrink-0 bg-accent"></span><a href="./products/automotive/springs.html">Springs</a></li>
+          <li class="flex items-center gap-3 py-4 text-ink"><span class="h-1.5 w-1.5 shrink-0 bg-accent"></span><a href="./products/automotive/rubber-products.html">Rubber Products</a></li>
+          <li class="flex items-center gap-3 py-4 text-ink"><span class="h-1.5 w-1.5 shrink-0 bg-accent"></span><a href="./products/automotive/bolts-machine-components.html">Bolts &amp; Machine Components</a></li>
+          <li class="flex items-center gap-3 py-4 text-ink"><span class="h-1.5 w-1.5 shrink-0 bg-accent"></span><a href="./products/automotive/specialised-bolts.html">Specialised Bolts</a></li>
+        </ul>
+      </div>
+
+      <!-- Defence -->
+      <div class="border bg-surface">
+        <div class="flex items-center justify-between gap-4 border-t-4 border-t-brand bg-brand-soft px-6 py-5 text-ink">
+          <h3 class="text-lg font-bold">Defence Products</h3>
+          <span class="text-sm text-muted">6 product lines</span>
+        </div>
+        <ul class="divide-y px-6">
+          <li class="flex items-center gap-3 py-4 text-ink"><span class="h-1.5 w-1.5 shrink-0 bg-accent"></span><a href="./products/defence/inflatable-boats.html">Inflatable Boats</a></li>
+          <li class="flex items-center gap-3 py-4 text-ink"><span class="h-1.5 w-1.5 shrink-0 bg-accent"></span><a href="./products/defence/fibre-glass-boats.html">Fibre Glass Boats</a></li>
+          <li class="flex items-center gap-3 py-4 text-ink"><span class="h-1.5 w-1.5 shrink-0 bg-accent"></span><a href="./products/defence/defence-bolts-machine-components.html">Bolts &amp; Machine Components</a></li>
+          <li class="flex items-center gap-3 py-4 text-ink"><span class="h-1.5 w-1.5 shrink-0 bg-accent"></span><a href="./products/defence/bogie-bolts.html">Bogie Bolts</a></li>
+          <li class="flex items-center gap-3 py-4 text-ink"><span class="h-1.5 w-1.5 shrink-0 bg-accent"></span><a href="./products/defence/er70s-7-mig-welding-wire.html">ER70S-7 MIG Welding Wire</a></li>
+          <li class="flex items-center gap-3 py-4 text-ink"><span class="h-1.5 w-1.5 shrink-0 bg-accent"></span><a href="./products/defence/casting-forging-products.html">Casting &amp; Forging Products</a></li>
+        </ul>
+      </div>
+
+      <!-- Mining & Construction -->
+      <div class="border bg-surface">
+        <div class="flex items-center justify-between gap-4 border-t-4 border-t-brand bg-brand-soft px-6 py-5 text-ink">
+          <h3 class="text-lg font-bold">Mining &amp; Construction Products</h3>
+          <span class="shrink-0 text-sm text-muted">3 product lines</span>
+        </div>
+        <ul class="divide-y px-6">
+          <li class="flex items-center gap-3 py-4 text-ink"><span class="h-1.5 w-1.5 shrink-0 bg-accent"></span><a href="./products/mining-construction/drill-bits.html">Drill Bits</a></li>
+          <li class="flex items-center gap-3 py-4 text-ink"><span class="h-1.5 w-1.5 shrink-0 bg-accent"></span><a href="./products/mining-construction/drill-spares.html">Drill Spares</a></li>
+          <li class="flex items-center gap-3 py-4 text-ink"><span class="h-1.5 w-1.5 shrink-0 bg-accent"></span><a href="./products/mining-construction/drilling-consumables-tools.html">Drilling Consumables &amp; Tools</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-10">
+      <a href="products.html" class="btn bg-brand text-white hover:opacity-90">
+        View All Products
+        <svg class="ico h-4 w-4" style="stroke-width:2.2" aria-hidden="true"><use href="#i-arrow"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MANUFACTURING & ENGINEERING ============ -->
+<section id="capabilities" class="bg-brand-soft">
+  <div class="mx-auto max-w-7xl px-5 py-16 sm:px-8 md:py-24">
+    <div class="max-w-3xl">
+      <h2 class="h2 text-ink">Manufacturing &amp; Engineering</h2>
+      <p class="mt-4 text-muted sm:text-lg">Rajpall Manufacturers combines manufacturing capability, engineering understanding and quality-focused processes to support customers requiring dependable industrial products and components.</p>
+    </div>
+
+    <div class="mt-10 grid gap-px border bg-line sm:grid-cols-2 lg:grid-cols-4">
+      <div class="bg-surface p-6">
+        <h3 class="text-base font-bold text-ink">Precision Manufacturing</h3>
+        <p class="mt-2 text-sm leading-relaxed text-muted">Focused on dimensional accuracy, consistency and application requirements.</p>
+      </div>
+      <div class="bg-surface p-6">
+        <h3 class="text-base font-bold text-ink">Machined Components</h3>
+        <p class="mt-2 text-sm leading-relaxed text-muted">Machined parts for automotive, defence and wider industrial applications.</p>
+      </div>
+      <div class="bg-surface p-6">
+        <h3 class="text-base font-bold text-ink">Fasteners &amp; Bolts</h3>
+        <p class="mt-2 text-sm leading-relaxed text-muted">Standard, specialised and bogie bolts for automotive and defence use.</p>
+      </div>
+      <div class="bg-surface p-6">
+        <h3 class="text-base font-bold text-ink">Rubber Components</h3>
+        <p class="mt-2 text-sm leading-relaxed text-muted">Moulded and extruded components for sealing, vibration control and mechanical use.</p>
+      </div>
+      <div class="bg-surface p-6">
+        <h3 class="text-base font-bold text-ink">Casting &amp; Forging</h3>
+        <p class="mt-2 text-sm leading-relaxed text-muted">Cast and forged components for demanding engineering applications.</p>
+      </div>
+      <div class="bg-surface p-6">
+        <h3 class="text-base font-bold text-ink">Marine Products</h3>
+        <p class="mt-2 text-sm leading-relaxed text-muted">Inflatable and fibre glass boats for defence and marine applications.</p>
+      </div>
+      <div class="bg-surface p-6">
+        <h3 class="text-base font-bold text-ink">Drilling Products</h3>
+        <p class="mt-2 text-sm leading-relaxed text-muted">Drill bits, spares, consumables and tools for mining and construction.</p>
+      </div>
+      <div class="bg-surface p-6">
+        <h3 class="text-base font-bold text-ink">Custom Manufacturing</h3>
+        <p class="mt-2 text-sm leading-relaxed text-muted">Products developed around your drawings, dimensions, materials and application specifications.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE ============ -->
+<section id="why" class="bg-surface text-ink">
+  <div class="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 md:py-24 lg:grid-cols-12 lg:gap-16">
+    <div class="lg:col-span-4">
+      <h2 class="h2 text-ink lg:sticky lg:top-28">Why Choose Rajpall Manufacturers?</h2>
+    </div>
+
+    <ul class="border-b lg:col-span-8">
+      <li class="grid gap-2 border-t py-7 md:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] md:gap-8">
+        <h3 class="text-lg font-bold">Quality-Focused Manufacturing</h3>
+        <p class="text-muted">We maintain a strong focus on product quality, consistency and application requirements.</p>
+      </li>
+      <li class="grid gap-2 border-t py-7 md:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] md:gap-8">
+        <h3 class="text-lg font-bold">Customer-Centric Approach</h3>
+        <p class="text-muted">Customer requirements guide our product development, manufacturing and supply approach.</p>
+      </li>
+      <li class="grid gap-2 border-t py-7 md:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] md:gap-8">
+        <h3 class="text-lg font-bold">Multi-Industry Expertise</h3>
+        <p class="text-muted">We serve diverse industrial requirements across automotive, defence, mining and construction.</p>
+      </li>
+      <li class="grid gap-2 border-t py-7 md:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] md:gap-8">
+        <h3 class="text-lg font-bold">Manufacturing &amp; Trading</h3>
+        <p class="text-muted">Our combined manufacturing and trading capability allows us to support a broader range of industrial procurement requirements.</p>
+      </li>
+      <li class="grid gap-2 border-t py-7 md:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] md:gap-8">
+        <h3 class="text-lg font-bold">Long-Term Partnerships</h3>
+        <p class="text-muted">We aim to build lasting relationships through trust, integrity, responsiveness and dependable service.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ COMMITMENT ============ -->
+<section id="commitment" class="bg-bg">
+  <div class="mx-auto max-w-7xl px-5 py-16 sm:px-8 md:py-24">
+    <h2 class="flex items-center gap-4 font-heading text-lg font-semibold text-ink">
+      <span class="dim-line flex-1"></span>
+      Our Commitment
+      <span class="dim-line flex-1"></span>
+    </h2>
+
+    <div class="mt-12 grid items-end gap-8 lg:grid-cols-12 lg:gap-16">
+      <p class="font-heading text-4xl font-bold leading-[1.05] tracking-tight text-ink sm:text-5xl lg:col-span-7 xl:text-6xl">Excellence Is Our Blueprint.</p>
+      <p class="max-w-prose text-base leading-relaxed text-muted sm:text-lg lg:col-span-5">
+        Every customer requirement presents an opportunity to apply engineering knowledge, manufacturing discipline and attention to quality. At Rajpall Manufacturers, we are committed to continually improving our capabilities while building trusted, long-term relationships with customers.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="bg-surface">
+  <div class="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 md:py-24 lg:grid-cols-12 lg:gap-16">
+    <div class="lg:col-span-4">
+      <h2 class="h2 text-ink lg:sticky lg:top-28">Frequently asked questions</h2>
+    </div>
+
+    <div class="border-b lg:col-span-8">
+      <details class="border-t">
+        <summary class="flex items-center justify-between gap-6 py-5 text-left">
+          <h3 class="text-base font-semibold text-ink sm:text-lg">What does Rajpall Manufacturers manufacture?</h3>
+          <svg class="ico chev h-5 w-5 shrink-0 text-muted" aria-hidden="true"><use href="#i-chevron"/></svg>
+        </summary>
+        <p class="max-w-prose pb-6 text-muted">Rajpall Manufacturers LLP manufactures and trades precision components and engineered products serving the automotive, defence, mining and construction industries. Its portfolio includes springs, rubber products, bolts and machine components, marine products, welding wire, casting and forging products, drill bits, drill spares and drilling tools and consumables.</p>
+      </details>
+
+      <details class="border-t">
+        <summary class="flex items-center justify-between gap-6 py-5 text-left">
+          <h3 class="text-base font-semibold text-ink sm:text-lg">Which industries does Rajpall Manufacturers serve?</h3>
+          <svg class="ico chev h-5 w-5 shrink-0 text-muted" aria-hidden="true"><use href="#i-chevron"/></svg>
+        </summary>
+        <p class="max-w-prose pb-6 text-muted">Rajpall Manufacturers serves the automotive, defence, mining and construction industries. Its products are intended for applications where reliability, precision, durability and consistent performance are important.</p>
+      </details>
+
+      <details class="border-t">
+        <summary class="flex items-center justify-between gap-6 py-5 text-left">
+          <h3 class="text-base font-semibold text-ink sm:text-lg">Is Rajpall Manufacturers a manufacturer or supplier?</h3>
+          <svg class="ico chev h-5 w-5 shrink-0 text-muted" aria-hidden="true"><use href="#i-chevron"/></svg>
+        </summary>
+        <p class="max-w-prose pb-6 text-muted">Rajpall Manufacturers LLP operates as a manufacturing and trading company. Depending on the product and customer requirement, the company can manufacture products or support procurement through its trading and supply capabilities.</p>
+      </details>
+
+      <details class="border-t">
+        <summary class="flex items-center justify-between gap-6 py-5 text-left">
+          <h3 class="text-base font-semibold text-ink sm:text-lg">Can Rajpall manufacture products according to customer specifications?</h3>
+          <svg class="ico chev h-5 w-5 shrink-0 text-muted" aria-hidden="true"><use href="#i-chevron"/></svg>
+        </summary>
+        <p class="max-w-prose pb-6 text-muted">Where manufacturing capability permits, Rajpall can work around customer requirements such as drawings, dimensions, materials and application specifications. Specific custom-manufacturing capabilities should be confirmed with the Rajpall engineering team.</p>
+      </details>
+
+      <details class="border-t">
+        <summary class="flex items-center justify-between gap-6 py-5 text-left">
+          <h3 class="text-base font-semibold text-ink sm:text-lg">Which products does Rajpall offer for defence applications?</h3>
+          <svg class="ico chev h-5 w-5 shrink-0 text-muted" aria-hidden="true"><use href="#i-chevron"/></svg>
+        </summary>
+        <p class="max-w-prose pb-6 text-muted">The defence portfolio includes inflatable boats, fibre glass boats, bolts and machine components, bogie bolts, ER70S-7 MIG welding wire, and casting and forging products.</p>
+      </details>
+
+      <details class="border-t">
+        <summary class="flex items-center justify-between gap-6 py-5 text-left">
+          <h3 class="text-base font-semibold text-ink sm:text-lg">How can I request a quote?</h3>
+          <svg class="ico chev h-5 w-5 shrink-0 text-muted" aria-hidden="true"><use href="#i-chevron"/></svg>
+        </summary>
+        <p class="max-w-prose pb-6 text-muted">Share your requirement through the Request a Quote form, including the product, quantity and application details. You can also upload a drawing or specification so the Rajpall team can review it.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING CTA ============ -->
+<section id="quote" class="bp-grid border-y text-ink">
+  <div class="mx-auto flex max-w-7xl flex-col gap-8 px-5 py-16 sm:px-8 md:py-24 lg:flex-row lg:items-center lg:justify-between lg:gap-16">
+    <div class="max-w-2xl">
+      <h2 class="h2 text-ink">Looking for a Manufacturing Partner?</h2>
+      <p class="mt-5 text-base leading-relaxed text-muted sm:text-lg">Tell us about your component, product or application requirement. Our team can review your specifications and discuss the appropriate manufacturing or supply solution.</p>
+    </div>
+    <div class="flex flex-col gap-3 sm:flex-row lg:shrink-0">
+      <a href="products.html" class="btn btn-primary">Request a Quote</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer id="contact" class="border-t bg-footer text-muted">
+  <div class="mx-auto grid max-w-7xl gap-12 px-5 py-14 sm:px-8 md:grid-cols-2 lg:grid-cols-12">
+
+    <div class="lg:col-span-4">
+      <a href="#top" class="flex items-center gap-3" aria-label="Rajpall Manufacturers LLP, back to top">
+        <img class="w-52" src="assets/rajpal-logo.png" alt="Rajpall Manufacturers LLP">
+      </a>
+      <p class="mt-5 font-heading text-sm font-semibold text-ink">Excellence is our blueprint.</p>
+      <p class="mt-2 max-w-xs text-sm leading-relaxed">Precision manufacturing and engineered products for Automotive, Defence, Mining and Construction industries.</p>
+    </div>
+
+    <nav class="lg:col-span-3" aria-label="Quick links">
+      <h3 class="text-sm font-bold text-ink">Quick Links</h3>
+      <ul class="mt-4 space-y-2.5 text-sm">
+        <li><a href="/" class="hover:text-link">Home</a></li>
+        <li><a href="about-us.html" class="hover:text-link">About Us</a></li>
+        <li><a href="products.html" class="hover:text-link">Products</a></li>
+        <li><a href="industries.html" class="hover:text-link">Industries</a></li>
+        <li><a href="manufacturing-capabilities.html" class="hover:text-link">Manufacturing Capabilities</a></li>
+        <li><a href="contact-us.html" class="hover:text-link">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <nav class="lg:col-span-3" aria-label="Products">
+      <h3 class="text-sm font-bold text-ink">Products</h3>
+      <ul class="mt-4 space-y-2.5 text-sm">
+        <li><a href="products/automotive.html" class="hover:text-link">Automotive</a></li>
+        <li><a href="products/defence.html" class="hover:text-link">Defence</a></li>
+        <li><a href="products/mining-construction.html" class="hover:text-link">Mining &amp; Construction</a></li>
+      </ul>
+    </nav>
+
+    <div class="lg:col-span-2">
+      <h3 class="text-sm font-bold text-ink">Contact</h3>
+      <dl class="mt-4 space-y-3 text-sm">
+        <div class="flex gap-3"><dt class="w-16 shrink-0 text-ink">Address</dt><dd class="italic text-muted">To be added</dd></div>
+        <div class="flex gap-3"><dt class="w-16 shrink-0 text-ink">Phone</dt><dd class="italic text-muted">To be added</dd></div>
+        <div class="flex gap-3"><dt class="w-16 shrink-0 text-ink">Email</dt><dd class="italic text-muted">To be added</dd></div>
+        <div class="flex gap-3"><dt class="w-16 shrink-0 text-ink">WhatsApp</dt><dd class="italic text-muted">To be added</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="border-t border-line">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-6 text-sm sm:px-8 md:flex-row md:items-center md:justify-between">
+      <p>&copy; 2026 Rajpall Manufacturers LLP. All Rights Reserved.</p>
+      <ul class="flex flex-wrap gap-x-6 gap-y-2">
+        <li><a href="#top" class="hover:text-link">Privacy Policy</a></li>
+        <li><a href="#top" class="hover:text-link">Terms &amp; Conditions</a></li>
+        <li><a href="#top" class="hover:text-link">Disclaimer</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var DESKTOP = '(min-width: 1024px)';
+
+    /* ---------- Mobile / tablet hamburger ---------- */
+    var btn = document.getElementById('menu-btn');
+    var menu = document.getElementById('mobile-menu');
+    var iconOpen = document.getElementById('icon-open');
+    var iconClose = document.getElementById('icon-close');
+    var mBtn = document.getElementById('m-products-btn');
+    var mPanel = document.getElementById('m-products');
+    var mChev = document.getElementById('m-products-chev');
+
+    function setMenu(open) {
+      menu.classList.toggle('hidden', !open);
+      iconOpen.classList.toggle('hidden', open);
+      iconClose.classList.toggle('hidden', !open);
+      btn.setAttribute('aria-expanded', String(open));
+      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      if (!open) setMobileProducts(false);
+    }
+    function setMobileProducts(open) {
+      mPanel.classList.toggle('hidden', !open);
+      mChev.classList.toggle('rotate-180', open);
+      mBtn.setAttribute('aria-expanded', String(open));
+    }
+
+    btn.addEventListener('click', function () {
+      setMenu(btn.getAttribute('aria-expanded') !== 'true');
+    });
+    mBtn.addEventListener('click', function () {
+      setMobileProducts(mBtn.getAttribute('aria-expanded') !== 'true');
+    });
+    menu.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { setMenu(false); });
+    });
+
+    /* ---------- Desktop Products mega menu ---------- */
+    var wrap = document.getElementById('mega-wrap');
+    var mega = document.getElementById('mega-btn');
+    var panel = document.getElementById('mega-panel');
+    var chev = document.getElementById('mega-chev');
+    var timer = null;
+    var openedBy = null;               // 'hover' | 'click'
+    var canHover = window.matchMedia('(hover: hover)').matches;
+
+    function isOpen() { return mega.getAttribute('aria-expanded') === 'true'; }
+    function setMega(open, how) {
+      clearTimeout(timer);
+      panel.classList.toggle('hidden', !open);
+      chev.classList.toggle('rotate-180', open);
+      mega.setAttribute('aria-expanded', String(open));
+      if (open) {
+        panel.classList.remove('mega-in');
+        void panel.offsetWidth;        // restart the little entrance animation
+        panel.classList.add('mega-in');
+        openedBy = how || 'click';
+      } else {
+        openedBy = null;
+      }
+    }
+
+    mega.addEventListener('click', function () {
+      if (!isOpen()) { setMega(true, 'click'); }
+      else if (openedBy === 'hover') { openedBy = 'click'; }   // pin it open
+      else { setMega(false); }
+    });
+    wrap.addEventListener('mouseenter', function () {
+      if (!canHover) return;
+      clearTimeout(timer);
+      if (!isOpen()) setMega(true, 'hover');
+    });
+    wrap.addEventListener('mouseleave', function () {
+      if (!canHover || openedBy !== 'hover') return;
+      timer = setTimeout(function () { setMega(false); }, 160);
+    });
+    wrap.addEventListener('focusout', function (e) {
+      if (isOpen() && !wrap.contains(e.relatedTarget)) setMega(false);
+    });
+    panel.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { setMega(false); });
+    });
+    document.addEventListener('click', function (e) {
+      if (isOpen() && !wrap.contains(e.target)) setMega(false);
+    });
+
+    /* ---------- Shared ---------- */
+    document.addEventListener('keydown', function (e) {
+      if (e.key !== 'Escape') return;
+      if (isOpen()) { setMega(false); mega.focus(); }
+      if (btn.getAttribute('aria-expanded') === 'true') { setMenu(false); btn.focus(); }
+    });
+
+    var mq = window.matchMedia(DESKTOP);
+    var onChange = function () { setMenu(false); setMega(false); };
+    if (mq.addEventListener) mq.addEventListener('change', onChange);
+    else if (mq.addListener) mq.addListener(onChange);
+  })();
+</script>
+</body>
+</html>
